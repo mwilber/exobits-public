@@ -1,0 +1,56 @@
+.gallery-container .progress-update{
+	margin-top: 3em;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+	grid-gap: 2px;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.gallery div img{
+	width: 100%;
+}
+
+.gallery-controls{
+	max-width: 1024px;
+	margin: 1em auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.gallery-controls .col{
+	flex: 1 1 0;
+	padding: 0 2em;
+}
+
+.gallery-controls .col:first-of-type{
+	text-align: right;
+}
+
+.gallery-controls .col:last-of-type {
+	text-align: left;
+}
+
+.gallery-controls button {
+	padding: 0.15em 1em;
+	box-shadow: none;
+	background: var(--bkgColorHead);
+	color: var(--txtColor);
+	border-color: rgba(255, 255, 255, 0.25);
+}
+
+.gallery-controls .col:first-of-type button {
+	padding-left: 2em;
+}
+
+.gallery-controls .col:last-of-type button {
+	padding-right: 2em;
+}
+
+.gallery-controls button svg {
+	height: 2em;
+	vertical-align: top;
+}

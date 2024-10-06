@@ -1,0 +1,34 @@
+.setup-instructions{
+  background: var(--txtColor);
+  color: var(--bkgColor);
+  margin: 2em auto;
+  width: 50%;
+  min-height: 100px;
+  padding: 1em 2em 3em 2em;
+  border-radius: 5px;
+}
+
+.setup-instructions p {
+	text-align: justify;
+	margin-bottom: 1em;
+}
+
+.setup-instructions h3 {
+	text-align: left;
+  margin-top: 3em;
+	margin-bottom: 0;
+}
+
+.setup-instructions button,
+.setup-instructions .button {
+	background: var(--bkgColorHead);
+	color: var(--txtColor);
+}
+
+.setup-instructions button svg,
+.setup-instructions .button svg {
+	height: 1em;
+    margin-left: 1em;
+    margin-right: -0.5em;
+    vertical-align: top;
+}

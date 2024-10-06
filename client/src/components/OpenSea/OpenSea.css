@@ -1,0 +1,15 @@
+button.opensea{
+	background-color: var(--bkgColorHead);
+	color: var(--txtColorHead);
+	box-shadow: inset 1px 3px 25px 0px rgb(10 18 45 / 50%);
+	padding: 0;
+	border: solid 2px rgba(255,255,255,0.75);
+	border-radius: 25px;
+	line-height: 0;
+	cursor: pointer;
+}
+
+button.opensea svg{
+	height: 35px;
+  width: 35px;
+}

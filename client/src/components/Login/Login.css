@@ -1,0 +1,75 @@
+button.login{
+  background-color: var(--txtColorHead);
+	color: var(--bkgColorHead);
+	box-shadow: inset 1px 3px 25px 0px rgb(10 18 45 / 50%);
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0.5em 2em;
+	border: solid 1px var(--txtColorHead);
+	border-radius: 5px;
+  cursor: pointer;
+  margin-top: -16px;
+}
+
+.no-wallet{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: calc(1024px - 3em);
+	z-index: 1000;
+	padding: 1em 50px;
+	background: var(--bkgColorCallout);
+	color: var(--bkgColorHead);
+	border: none;
+	border-radius: 5px;;
+	box-shadow: 5px 5px 20px #000;
+}
+
+@media only screen and (max-width: 768px) {
+	.no-wallet{
+		width: calc(90% - 1em);
+		padding: 1em;
+	}
+}
+
+.no-wallet .close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	color: var(--txtColorHead);
+	background: var(--bkgColorHead);
+	border-radius: 25px;
+	border: solid 2px var(--bkgColorHead);
+	padding: 10px;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.no-wallet button.close svg {
+	margin-left: -7px;
+    margin-top: -2px;
+}
+
+.no-wallet p {
+	text-align: justify;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.no-wallet button,
+.no-wallet .button {
+	background: var(--bkgColorHead);
+	color: var(--txtColor);
+}
+
+.no-wallet button svg,
+.no-wallet .button svg {
+	height: 1em;
+    margin-left: 1em;
+    margin-right: -0.5em;
+    vertical-align: top;
+}

@@ -1,0 +1,56 @@
+.mint-controls{
+	background: var(--bkgColorCallout);
+	color: var(--bkgColorHead);
+	border: none;
+	box-shadow: 5px 5px 20px #000;
+}
+
+.mint-controls.init,
+.mint-controls.reset{
+	background-color: rgba(225,225,225,0.8);
+}
+
+.mint-controls button.mint{
+	background-color: var(--bkgColorHead);
+	color: var(--txtColorHead);
+	box-shadow: inset 1px 3px 25px 0px rgb(10 18 45 / 50%);
+	font-size: 1em;
+	font-weight: bold;
+	/* text-transform: uppercase; */
+	padding: 0.5em 2em;
+	border: solid 2px rgba(255,255,255,0.75);
+	border-radius: 5px;
+}
+
+.mint-controls input{
+	width: 70%;
+	text-align: center;
+	background-color: rgba(255,255,255,0.9);
+	font-size: 1.5em;
+	line-height: 2em;
+	margin-bottom: 1em;
+	border: none;
+	border-radius: 5px;
+}
+
+.mint-controls p,
+.mint-controls i{
+	animation: fadein 500ms linear 0ms forwards;
+}
+
+.mint-processing svg{
+	height: 2em;
+	animation: 3s infinite linear spin;
+	margin-right: 0.5em;
+	vertical-align: middle;
+}
+
+@keyframes spin{
+	from {transform: rotate(0deg)}
+	to {transform: rotate(359deg)}
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

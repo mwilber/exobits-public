@@ -1,0 +1,5 @@
+node_modules
+client/public/gz-exobit
+client/src/contracts
+truffle-config.js
+server/datagen/key.php

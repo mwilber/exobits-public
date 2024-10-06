@@ -1,0 +1,80 @@
+.home-container{
+		position: relative;
+		text-align: left;
+		max-width: 800px;
+		margin: 0 auto 2em auto;
+}
+
+.home-container h2{
+		line-height: 1;
+		font-size: 3em;
+		margin: 0;
+		padding: 1em 2em 0.25em 0;
+}
+
+.home-container p {
+	margin: 0;
+	font-size: 1.25em;
+	line-height: 1.5em;
+}
+
+.home-container p.introduction,
+.home-container p.description {
+	font-size: 1.25em;
+	line-height: 1.35em;
+	margin-top: 1em;
+}
+
+.home-container p.introduction {
+	margin-top: -2em;
+	background-color: var(--bkgColor);
+	padding: 0.5em 2em 0 2em;
+	width: 100%;
+	margin-left: -2em;
+	font-size: 2em;
+}
+
+.home-container p.cta{
+	text-align: center;
+	margin: 2em 0;
+}
+
+.home-content{
+		margin-top: 4em;
+}
+
+.home-content:first-of-type{
+	margin-top: 1em;
+}
+
+.how-it-works p.indent{
+	margin: 1em 0 0 2em;
+}
+
+.how-it-works img{
+	width: 100%;
+	max-width: 800px;
+}
+
+.web-component p{
+	margin: 1em 0 0 0;
+}
+
+.web-component ul li{
+	margin: 1em 0 0 0;
+	font-size: 1.5em;
+}
+
+@media only screen and (max-width: 875px) {
+	.home-container{
+		margin-left: 2em;
+		margin-right: 2em;
+		font-size: 12px;
+	}
+
+	.home-container p.introduction {
+    margin: 0;
+    padding: 0;
+	}
+
+}

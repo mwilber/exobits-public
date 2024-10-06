@@ -1,0 +1,25 @@
+{
+  "name": "exobits",
+  "version": "1.0.0",
+  "description": "This box comes with everything you need to start using smart contracts from a react app. This is as barebones as it gets, so nothing stands in your way.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwilber/exobits.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwilber/exobits/issues"
+  },
+  "homepage": "https://github.com/mwilber/exobits#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "4.1.0"
+  }
+}

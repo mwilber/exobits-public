@@ -1,0 +1,73 @@
+.mint-detail{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 5000;
+	background: rgba(0,0,0,0.8);
+}
+
+.mint-detail .mint-detail-container{
+	position: relative;
+	width: 90%;
+	max-width: 512px;
+	height: auto;
+	max-height: 512px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	float: left;
+	background: var(--bkgColor);
+	/* box-shadow: 1px 1px 25px 0px rgba(225, 185, 255, 0.3); */
+	border: solid 1px var(--bkgColorCallout);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.mint-detail .mint-detail-container img{
+	width:100%;
+}
+
+.mint-detail .close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	color: var(--bkgColorHead);
+	background: rgba(225,225,225,0.8);
+	border-radius: 25px;
+	padding: 10px;
+	border: solid 2px var(--bkgColorHead);
+	z-index: 1000;
+}
+
+.mint-detail .mint-controls,
+.mint-detail .opensea{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+	width: calc( 100% - 2em );
+	padding: 1em;
+}
+
+.mint-detail .mint-controls.setup,
+.mint-detail .mint-controls.confirm,
+.mint-detail .mint-controls.processing,
+.mint-detail .mint-controls.error{
+	width: calc( 90% - 2em );
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	width: calc( 90% - 2em );
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	border: solid 1px white;
+	border-radius: 5px;
+	transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

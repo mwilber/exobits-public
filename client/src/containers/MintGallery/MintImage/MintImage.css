@@ -1,0 +1,9 @@
+.mint-image{
+    position: relative;
+}
+
+.mint-image .owned{
+    position: absolute;
+    background-color: #ff0;
+    color: #000;
+}

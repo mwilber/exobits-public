@@ -1,0 +1,97 @@
+.home-content{
+	width:100%;
+	background-color: transparent;
+
+}
+
+.home-content h3{
+	line-height: 1;
+	font-size: 2em;
+	margin: 0;
+	padding: 1em 2em 0.25em 0;
+}
+
+.home-content p{
+	margin: 0;
+	padding: 0 4em 0 0;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.home-content.align-left{
+	text-align: left;
+}
+
+.home-content.align-center{
+	text-align: center;
+}
+
+.home-content.align-left img,
+.home-content.align-left .demo-container{
+	float:left;
+	margin-right: 2em;
+}
+
+.home-content.align-right{
+	text-align: right;
+}
+
+.home-content.align-right img,
+.home-content.align-right .demo-container{
+	float:right;
+	margin-left: 2em;
+}
+
+.home-content.align-right p{
+	padding: 0 0 0 4em;
+}
+
+.home-content.align-center h2{
+	text-align: left;
+}
+
+.home-content.align-center p{
+	text-align: left;
+	padding-bottom: 1em;
+}
+
+.home-content img,
+.home-content .demo-container{
+	width: 40%;
+	min-width: 100px;
+}
+
+.home-content .demo-container{
+	height: 0;
+	padding-bottom: 0;
+	width: 512px;
+    height: 512px;
+    padding: 0;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.home-content .clearfix{
+	clear: both;
+}
+
+
+@media only screen and (max-width: 875px) {
+	.home-content img,
+	.home-content .demo-container{
+		width: 100%;
+    min-width: 100px;
+    max-width: 512px;
+    float: none !important;
+    margin: 0 !important;
+	}	
+
+
+	.home-content.align-right{
+		text-align: left;
+	}
+
+	.home-content.align-right p{
+		padding: 0;
+	}
+}

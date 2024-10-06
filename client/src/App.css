@@ -1,0 +1,64 @@
+html, body, #root{
+  --bkgColor: #1b1b1f;
+  --txtColor: #eee;
+  --bkgColorHead: #2f2e38;
+  --txtColorHead: #eee;
+  --bkgColorCallout: #e3e3e8;
+  --heightHead: 50px;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--bkgColor);
+  color: var(--txtColor);
+}
+
+a{
+  color: var(--txtColor);
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  height: var(--heightHead);
+  width: 100%;
+  flex: 0;
+}
+
+.content{
+  flex: 1;
+  margin-top: var(--heightHead);
+  /* overflow-x: hidden;
+  overflow-y: visible; */
+}
+
+button,
+a.button{
+  background-color: var(--txtColorHead);
+	color: var(--bkgColorHead);
+	box-shadow: inset 1px 3px 25px 0px rgb(10 18 45 / 50%);
+	font-size: inherit;
+	font-weight: bold;
+	padding: 0.5em 2em;
+	border: solid 1px var(--txtColorHead);
+	border-radius: 5px;
+  cursor: pointer;
+  /* margin-top: -16px; */
+  text-decoration: none;
+}
+
+footer{    
+  display: block;
+  flex: 0;
+}

@@ -1,0 +1,61 @@
+<html>
+	<body>
+		<div class="controls">
+			<input id="seed" type="text" value="exobit"/>
+			<input id="iterations" type="number" value="1"/>
+			<button id="go">Go</button>
+		</div>
+		<div class="exobit-pen"></div>
+		<script>
+			const seed = document.querySelector('#seed');
+			const iterations = document.querySelector('#iterations');
+			const go = document.querySelector('#go');
+			const exoPen = document.querySelector('.exobit-pen');
+			
+			go.addEventListener('click', async () => {
+				let seedVal = seed.value;
+				let iterVal = parseInt(iterations.value);
+
+				for(let idx=1; idx<=iterVal; idx++){
+
+					// Remove existing web component
+					while (exoPen.firstChild) exoPen.removeChild(exoPen.firstChild);
+
+					let keySeed = seedVal + idx;
+					console.log('fetching', keySeed);
+					let response = await fetch('./keygen.php?seed='+keySeed);
+					let json = await response.json();
+					console.log('response', json.key);
+					
+					let exobit = document.createElement('gz-exobit');
+        				exobit.dataset.key = json.key;
+
+					exobit.addEventListener('renderComplete', async function (evt) {
+					 	const wc = evt.detail.source;
+					 	let wcData = {
+				 			image: null,
+				 			metadata: null
+				 		};
+				 		if(wc.GetTokenMetadata) wcData.metadata = wc.GetTokenMetadata();
+				 		if(wc.GetTokenMetadata) wcData.image = wc.GetPreviewImage();
+				 		wcData.metadata.number = idx;
+				 		console.log('wcData', wcData);
+						const formData = new FormData();
+						formData.append('image', wcData.image);
+						formData.append('json', JSON.stringify(wcData.metadata));
+						formData.append('key', json.key);
+						let response = await fetch('datagen.php', {
+							method: 'POST',
+							body: formData
+						});					
+					}, false);
+
+        				exoPen.appendChild(exobit);
+				}
+			});
+
+		</script>
+		<script src="../wc/mock-art-generator.js"></script>
+		<script src="../wc/gz-exobit-0.5.5.js"></script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+footer{
+    float:left;
+    color: #fff;
+    text-align: left;
+    padding: 1.5em 2em;
+    background: rgba(0,0,0,0.75);
+}
+
+footer .copyright{
+    display: block;
+    float:left;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer nav{
+    margin: 0;
+    float:right;
+}
+
+@media only screen and (max-width: 875px) {
+	footer nav{
+        margin-top: 1em;
+        float: left;
+        clear: left;
+	}
+
+    footer nav ul{
+        padding: 0;
+    }
+}
+
+footer nav ul{
+    margin: 0;
+    list-style: none;
+    float:right;
+}
+
+footer nav ul li{
+    float:left;
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+}
+
+footer nav ul li a svg{
+    fill: #fff;
+    height: 1em;
+}
+
+footer nav ul li a svg.greenzeta{
+    color: #7bb951;
+}
+footer nav ul li a svg.fa-twitter{
+    color: #1DA1F2;
+}
+footer nav ul li a svg.fa-facebook{
+    color: #4267B2;
+}

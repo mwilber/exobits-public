@@ -1,0 +1,41 @@
+.gallery-detail{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 5000;
+	background: rgba(0,0,0,0.75);
+}
+
+.gallery-detail .gallery-detail-container{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	float: left;
+	/* background: var(--bkgColor);
+	box-shadow: 1px 1px 25px 0px rgba(225, 185, 255, 0.3); */
+}
+
+.gallery-detail .close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	color: var(--bkgColorHead);
+	background: rgba(225,225,225,0.8);
+	border-radius: 25px;
+	border: solid 2px var(--bkgColorHead);
+	padding: 10px;
+	z-index: 1000;
+}
+
+.gallery-detail .opensea{
+	position: absolute;
+	top: 5px;
+	right: calc(3em + 10px);
+	z-index: 1000;
+}
